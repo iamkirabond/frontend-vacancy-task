@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { categories } from './tokens'
+import { Routes, Route } from "react-router-dom";
 import { Tokens } from './pages/Tokens';
-import './App.css'
 import Menu from './components/Menu/Menu';
 import { Search } from './pages/Search';
+import './App.css'
 
 function App() {
   return (
@@ -14,6 +12,7 @@ function App() {
         <Route path="/" element={ <Tokens />} />
         <Route path="/tokens" element={ <Tokens />} />
         <Route path="/search" element={ <Search />} />
+        <Route path="*" element={ <Tokens />} />
       </Routes> 
     </div>
   )
