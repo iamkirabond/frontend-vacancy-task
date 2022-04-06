@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/frontend-vacancy-task/static/css/main.ef1ee2f6.css",
-    "main.js": "/frontend-vacancy-task/static/js/main.5058099d.js",
+    "main.css": "/frontend-vacancy-task/static/css/main.f1d6fe60.css",
+    "main.js": "/frontend-vacancy-task/static/js/main.e9cbbca8.js",
     "static/js/787.8f81b03e.chunk.js": "/frontend-vacancy-task/static/js/787.8f81b03e.chunk.js",
     "static/media/ever-board-logo.svg": "/frontend-vacancy-task/static/media/ever-board-logo.42b74923464aa031082ef5d4a931dc10.svg",
     "index.html": "/frontend-vacancy-task/index.html",
-    "main.ef1ee2f6.css.map": "/frontend-vacancy-task/static/css/main.ef1ee2f6.css.map",
-    "main.5058099d.js.map": "/frontend-vacancy-task/static/js/main.5058099d.js.map",
+    "main.f1d6fe60.css.map": "/frontend-vacancy-task/static/css/main.f1d6fe60.css.map",
+    "main.e9cbbca8.js.map": "/frontend-vacancy-task/static/js/main.e9cbbca8.js.map",
     "787.8f81b03e.chunk.js.map": "/frontend-vacancy-task/static/js/787.8f81b03e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef1ee2f6.css",
-    "static/js/main.5058099d.js"
+    "static/css/main.f1d6fe60.css",
+    "static/js/main.e9cbbca8.js"
   ]
 }
