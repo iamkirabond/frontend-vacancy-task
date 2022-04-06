@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import { Logo } from '../Logo/Logo'
-import { menu } from '../menu'
+import { menu } from '../../menu'
 import { MenuItem } from '../MenuItem/MenuItem'
 
 export default function Menu() {
+  const [tab, setTab] = useState('')
+
   return (
     <div className="menu">
       <Logo />

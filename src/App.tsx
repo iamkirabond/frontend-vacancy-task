@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { categories } from './tokens'
+import { Tokens } from './pages/Tokens';
 import './App.css'
-import { Token } from './Token/Token'
-import Menu from './Menu/Menu'
+import Menu from './components/Menu/Menu';
+import { Search } from './pages/Search';
 
 function App() {
   const [category, setCategory] = useState(categories[0])
@@ -10,7 +12,11 @@ function App() {
   return (
     <div className="app">
       <Menu/>
-      <Token/>
+      <Routes>
+        <Route path="/" element={ <Tokens />} />
+        <Route path="/tokens" element={ <Tokens />} />
+        <Route path="/search" element={ <Search />} />
+      </Routes> 
     </div>
   )
 }

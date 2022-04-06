@@ -2,11 +2,16 @@ ul, li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .app {
   background-color: #F7F7FB;
   display: flex;
   border-radius: 32px 0px 0px 0px;
   font-family: montserrat,sans-serif;
+  min-height: 100vh;
 }
 
 .menu {
@@ -19,14 +24,19 @@ ul, li {
   margin-top: 48px;
 }
 
-.tokens-layout {
+.tokens-layout, .search-layout {
   width: 100%;
   padding: 32px;
 }
 
-.token {
+.token, .search {
   padding: 24px;
   border-radius: 8px;
   background-color: #fff;
   margin-bottom: 8px;
+}
+
+.search-description{
+  padding: 100px 0; 
+  text-align: center;
 }

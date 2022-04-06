@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { TokenItem } from '../TokenItem/TokenItem'
-import { tokens } from '../tokens'
+import { tokens } from '../../tokens'
 import './Token.css'
 
 export function Token() {
@@ -33,8 +33,8 @@ export function Token() {
                 </ul>
             </div>
             <div className="tokens">
-            {tokenList}
-        </div>
+                {tokenList}
+            </div>
         </div>
     )
 }
