@@ -31,7 +31,7 @@ a {
 
 .token, .search {
   padding: 24px;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: #fff;
   margin-bottom: 8px;
 }

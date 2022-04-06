@@ -29,7 +29,7 @@ export function Token() {
                     <li className={customFilter === 'defi' ? 'active' : ''} onClick={(e) => updateFilter('defi', e)}>DeFi</li>
                     <li className={customFilter === 'wallets' ? 'active' : ''} onClick={(e) => updateFilter('wallets', e)}>Wallets</li>
                     <li className={customFilter === 'games' ? 'active' : ''} onClick={(e) => updateFilter('games', e)}>Games</li>
-                    <li className={customFilter === 'dex' ? 'active' : ''} onClick={(e) => updateFilter('dex', e)}>Dex</li>
+                    <li className={customFilter === 'dex' ? 'active' : ''} onClick={(e) => updateFilter('dex', e)}>DEX</li>
                 </ul>
             </div>
             <div className="tokens">
