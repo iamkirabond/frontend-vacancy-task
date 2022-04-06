@@ -7,8 +7,6 @@ import Menu from './components/Menu/Menu';
 import { Search } from './pages/Search';
 
 function App() {
-  const [category, setCategory] = useState(categories[0])
-
   return (
     <div className="app">
       <Menu/>

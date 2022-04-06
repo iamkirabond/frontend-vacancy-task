@@ -15,10 +15,6 @@ export function MenuItem(props: props) {
     if (props.tab !== props.id) props.setTab(props.id)
   }
 
-  useEffect(() => {
-    changeActive()
-  }, [])
-
   return (
     <Link to={'/' + props.id}>
       <div
