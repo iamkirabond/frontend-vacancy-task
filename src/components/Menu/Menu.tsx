@@ -8,12 +8,15 @@ export default function Menu() {
 
   return (
     <div className="menu">
-      <Logo />
-      <div className="menu-items">
-        {menu.map((item, index) => {
-          const newItem = {tab, setTab, ...item}
-          return <MenuItem {...newItem} />
-        })}
+      <div className="menu-wrapper">
+        <Logo />
+        <div className="menu-items">
+          {menu.map((item, index) => {
+            const newItem = {tab, setTab, ...item}
+            return <MenuItem {...newItem} />
+          })}
+        </div>
+        <span className="menu-lang">Русский</span>
       </div>
     </div>
   )

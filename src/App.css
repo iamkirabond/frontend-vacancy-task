@@ -15,18 +15,41 @@ a {
 }
 
 .menu {
-  padding: 24px;
-  width: 320px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
   background: linear-gradient(200deg, #B380FD 12%, #6347F5 78%);
+  z-index: 1;
+}
+
+.menu-wrapper {
+  padding: 64px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 224px;
+  height: -webkit-fill-available;
 }
 
 .menu-items {
   margin-top: 48px;
 }
 
+.menu-lang {
+  color: #ffffff;
+  text-align: center;
+  margin-top: auto;
+}
+
 .tokens-layout, .search-layout {
   width: 100%;
   padding: 32px;
+  margin-left: 320px;
+  border-radius: 32px 0 0 0;
+  z-index: 5;
+  background: #F7F7FB;
 }
 
 .token, .search {
