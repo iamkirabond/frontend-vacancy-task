@@ -16,7 +16,7 @@ export function MenuItem(props: props) {
   }
 
   return (
-    <Link to={'/' + props.id}>
+    <Link to={props.id}>
       <div
         className={props.tab === props.id ? 'menu-item menu-item-active' : 'menu-item'}
         key={props.id}
