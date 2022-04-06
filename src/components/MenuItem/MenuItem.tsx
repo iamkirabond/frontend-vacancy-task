@@ -1,25 +1,41 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './MenuItem.css'
 
-interface props{
-    id: string,
-    title: string,
-    icon: any
+interface props {
+  id: string
+  title: string
+  icon: any
+  tab: string
+  setTab: Function
 }
 
 export function MenuItem(props: props) {
-  const [active, setActive] = useState(false)
-
-  function changeActive(){
-    setActive(!active)
+  function changeActive() {
+    if (props.tab !== props.id) props.setTab(props.id)
   }
+
+  useEffect(() => {
+    changeActive()
+  }, [])
 
   return (
     <Link to={'/' + props.id}>
-      <div className={active ? "menu-item menu-item-active" : "menu-item"} key={props.id} onClick={changeActive}>
+      <div
+        className={props.tab === props.id ? 'menu-item menu-item-active' : 'menu-item'}
+        key={props.id}
+        onClick={changeActive}
+      >
         {props.icon}
-        <span className={active ? "menu-item-title menu-item-title-active" : "menu-item-title"}>{props.title}</span>
+        <span
+          className={
+            props.tab === props.id
+              ? 'menu-item-title menu-item-title-active'
+              : 'menu-item-title'
+          }
+        >
+          {props.title}
+        </span>
       </div>
     </Link>
   )
