@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ReactComponent as Arrow } from '../../assets/arrow.svg'
 import './TokenItem.css'
 
 interface props {
@@ -74,14 +75,7 @@ export function TokenItem(props: props) {
           <div className="token-users">{props.users}</div>
         </div>
         <div className={isOpen ? 'token-tab token-tab-open' : 'token-tab'}>
-          <svg fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M1.057.557c.52-.52 1.365-.52 1.886 0L10 7.614 17.057.557a1.333 1.333 0 1 1 1.886 1.886l-8 8c-.52.52-1.365.52-1.886 0l-8-8a1.333 1.333 0 0 1 0-1.886Z"
-              fill="#6347F5"
-            />
-          </svg>
+          <Arrow/>
         </div>
       </div>
       {isOpen ? <p className="token-description">{props.description}</p> : ''}
