@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import cn from 'classnames'
 import './MenuItem.css'
@@ -8,7 +7,7 @@ interface props {
   title: string
   icon: any
   tab: string
-  setTab: Function
+  setTab: (tab: string) => void
 }
 
 export function MenuItem(props: props) {
