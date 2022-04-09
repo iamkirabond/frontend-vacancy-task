@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import cn from 'classnames'
 import './MenuItem.css'
 
 interface props {
@@ -14,21 +15,22 @@ export function MenuItem(props: props) {
   function changeActive() {
     if (props.tab !== props.id) props.setTab(props.id)
   }
+  console.log(cn('menu-item-title', 'active'))
 
   return (
     <Link to={props.id}>
       <div
-        className={props.tab === props.id ? 'menu-item menu-item-active' : 'menu-item'}
+        className={cn('menu-item', {
+          'menu-item-active': props.tab === props.id,
+        })}
         key={props.id}
         onClick={changeActive}
       >
         {props.icon}
         <span
-          className={
-            props.tab === props.id
-              ? 'menu-item-title menu-item-title-active'
-              : 'menu-item-title'
-          }
+          className={cn('menu-item-title', {
+            'menu-item-title-active': props.tab === props.id,
+          })}
         >
           {props.title}
         </span>
