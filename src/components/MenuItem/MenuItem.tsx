@@ -14,7 +14,6 @@ export function MenuItem(props: props) {
   function changeActive() {
     if (props.tab !== props.id) props.setTab(props.id)
   }
-  console.log(cn('menu-item-title', 'active'))
 
   return (
     <Link to={props.id}>
